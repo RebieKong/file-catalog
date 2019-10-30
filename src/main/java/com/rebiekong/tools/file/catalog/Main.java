@@ -15,8 +15,10 @@ public class Main extends Application {
         URL fxml = getClass().getResource("sample.fxml");
         System.out.println(fxml);
         Parent root = FXMLLoader.load(fxml);
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("File manger");
+        primaryStage.setScene(new Scene(root, 1200, 300));
+        primaryStage.setResizable(false);
+        primaryStage.setFullScreen(false);
         primaryStage.show();
     }
 

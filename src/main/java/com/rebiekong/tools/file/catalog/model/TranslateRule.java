@@ -5,12 +5,16 @@ import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
+/**
+ * @author RebieKong
+ */
 public class TranslateRule {
     private StringProperty src;
     private StringProperty containStr;
     private StringProperty dst;
     private BooleanProperty isMove;
-    public TranslateRule(String src, String containStr, String dst,Boolean isMove) {
+
+    public TranslateRule(String src, String containStr, String dst, Boolean isMove) {
         this.setSrc(src);
         this.setContainStr(containStr);
         this.setDst(dst);
