@@ -13,7 +13,6 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         URL fxml = getClass().getResource("sample.fxml");
-        System.out.println(fxml);
         Parent root = FXMLLoader.load(fxml);
         primaryStage.setTitle("File manger");
         primaryStage.setScene(new Scene(root, 1200, 300));

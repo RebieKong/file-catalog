@@ -116,8 +116,6 @@ public class Controller {
                     File file = directoryChooser.showDialog(fileStage);
                     if (file != null) {
                         String path = file.getPath();
-                        System.out.println(path);
-                        System.out.println();
                         switch (a.getTableColumn().getId()) {
                             case "srcCol":
                                 personData.get(a.getIndex()).setSrc(path);
@@ -150,13 +148,6 @@ public class Controller {
                     checkBox.selectedProperty().addListener((obVal, oldVal, newVal) -> {
                         personData.get(this.getIndex()).setIsMove(newVal);
                         updatePreviewListData();
-                        if (newVal) {
-                            // 添加选中时执行的代码
-                            System.out.println("第" + this.getIndex() + "行被选中！");
-                            // 获取当前单元格的对象
-                            // this.getItem();
-                        }
-
                     });
                 }
             }
