@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="426.0" prefWidth="568.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.rebiekong.tools.file.catalog.Controller">
+  <children>
+    <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <TableView fx:id="ruleTable" layoutX="0.0" layoutY="0.0" prefHeight="187.0" prefWidth="532.0">
+          <columns>
+            <TableColumn prefWidth="75.0" resizable="false" sortable="false" text="src" fx:id="srcCol" />
+            <TableColumn prefWidth="75.0" resizable="false" sortable="false" text="rule" fx:id="ruleCol" />
+            <TableColumn prefWidth="75.0" resizable="false" sortable="false" text="dst" fx:id="dstCol" />
+            <TableColumn prefWidth="75.0" resizable="false" sortable="false" text="isMove" fx:id="isMoveCol" />
+            <TableColumn prefWidth="75.0" resizable="false" sortable="false" text="saveBtn" fx:id="saveBtnCol" />
+          </columns>
+        </TableView>
+      </children>
+    </Pane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
